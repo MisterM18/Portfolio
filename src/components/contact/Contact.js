@@ -35,7 +35,7 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_5d5auhc', 'template_0shyvymc', form.current, '3_9SCmPSUoSfCwpxw')
+    emailjs.sendForm('service_5d5auhc', 'template_0shyvym', form.current, { publicKey:'3_9SCmPSUoSfCwpxw' } )
       .then((result) => {
         console.log(result.text);
       }, (error) => {
