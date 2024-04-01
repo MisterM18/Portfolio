@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
 
 export const Contact = () => {
   const classes = useStyles();
-  const greetings = "Say hello.";
 
   const form = useRef();
 
@@ -96,8 +95,9 @@ export const Contact = () => {
             </form>
           </div>
           <h1 className="contact_msg">
-            <TextDecrypt text={greetings} />
+            <TextDecrypt text={"You can send message"} />
           </h1>
+
         </div>
       </Container>
     </section>

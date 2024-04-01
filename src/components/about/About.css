@@ -18,6 +18,24 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.51);
 }
+.skill {
+  display: flex;
+  flex-wrap: wrap; /* ให้เวอร์ชันเล็กของรายการเมื่อมีการ wrap */
+  justify-content: flex-start; /* จัดเรียง item จากซ้ายไปขวา */
+}
+
+.skill .item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px; /* เพิ่มระยะห่างระหว่าง item */
+}
+
+.skill .item img {
+  width: 170px; /* ปรับขนาดของ icon ตามต้องการ */
+  margin-right: 10px; /* เพิ่มระยะห่างระหว่าง icon กับข้อความ */
+}
+
+
 ._content_wrapper {
   width: 40%;
 }
